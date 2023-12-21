@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Project 10 Loops & Arrays Assignment</h2>
+<!--For each function, I have labeled them by demo.-->
+<p id="demo"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+
+<!--Below are my function written within each seperate script-->
+
+<!--Script 1-->
+<script>
+let text = "";
+
+for (let i = 5; i < 15; i++) {
+  text += "It is 3rd down and " + i + "<br>";
+}
+
+document.getElementById("demo").innerHTML = text;
+</script>
+
+<!--Script 2-->
+
+<script>
+    let text2 = ""
+    let m = 1;
+    
+    do {
+      text2 += "<br>The day of the month is " + m;
+      m++;
+    }
+    while (m < 10);  
+    
+    document.getElementById("demo2").innerHTML = text2;
+    </script>
+
+<!--Script 3-->
+
+<script>
+    const dogs = [
+      "Corgi",
+       
+      "Doberman",
+      "Great Dane" 
+    ];
+
+    document.getElementById("demo3").innerHTML = dogs;
+    </script>
+
+</body>
+</html>
